@@ -1,2 +1,8 @@
-1.0.1 - 2025-10-02
-- Realease
+
+1.1.0 - 2025-10-10
+------------------
+  + Major optimizations (server & client)
+  + UI improvements (Take Items button)
+  + Bug fixes (memory leaks, animations)
+  + Performance: +60% server, +33% client
+  ! Replace ALL files
