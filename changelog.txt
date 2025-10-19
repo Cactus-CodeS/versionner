@@ -1,10 +1,10 @@
-
-2.0.0 - 2025-10-14
+2.1.0 - 2025-10-19
 ------------------
-  + Illegal crafting system (hidden stations, job whitelist)
-  + Webhook integration (config_webhook.lua)
-  + Complete UI/UX overhaul (modern design, smooth animations)
-  + Code architecture refactor (optimized memory, reduced lag)
-  + Enhanced language system
-  + Performance: +75% optimization
-  ! Replace ALL files - complete rebuild
+  + RSG Framework full compatibility
+  + ox_lib dependency support (required for RSG)
+  + framework.lua now fully open source
+  + Customizable framework options
+  + Enhanced notification system (notif.lua rework)
+  + Framework-specific adaptations
+  ! Replace: framework.lua, config.lua, notif.lua, fxmanifest.lua
+  ! Install ox_lib before updating (RSG users only)
