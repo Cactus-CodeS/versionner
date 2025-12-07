@@ -1,10 +1,15 @@
-2.1.0 - 2025-10-19
+2.2.0 - 2025-12-07
 ------------------
-  + RSG Framework full compatibility
-  + ox_lib dependency support (required for RSG)
-  + framework.lua now fully open source
-  + Customizable framework options
-  + Enhanced notification system (notif.lua rework)
-  + Framework-specific adaptations
-  ! Replace: framework.lua, config.lua, notif.lua, fxmanifest.lua
-  ! Install ox_lib before updating (RSG users only)
+  + NEW: Law Enforcement Alerts for illegal crafting
+  + Configurable alert probability (0-100%)
+  + In-game notifications for law jobs
+  + Job whitelist support (sheriff/police/lawman)
+  + Randomized zone location display
+  + Map blip/zone system with duration & radius
+  + Discord webhook integration for illegal alerts
+  + Cooldown system to prevent spam
+  + New server exports (alert trigger / send to jobs)
+  + New client exports (create/remove alert zone)
+  + Performance improvements
+  ! Complete file replacement required
+  ! Replace: server.lua, client.lua, config.lua, config_webhook.lua, fxmanifest.lua, export.md
