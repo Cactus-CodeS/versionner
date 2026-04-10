@@ -1,15 +1,26 @@
-2.2.0 - 2025-12-07
+2.3.0 - 2026-04-10
 ------------------
-  + NEW: Law Enforcement Alerts for illegal crafting
-  + Configurable alert probability (0-100%)
-  + In-game notifications for law jobs
-  + Job whitelist support (sheriff/police/lawman)
-  + Randomized zone location display
-  + Map blip/zone system with duration & radius
-  + Discord webhook integration for illegal alerts
-  + Cooldown system to prevent spam
-  + New server exports (alert trigger / send to jobs)
-  + New client exports (create/remove alert zone)
-  + Performance improvements
+  + NEW: Auto framework detection (RSG-Core / VORP Core / RedEM)
+  + Config.Framework = 'AUTO' — detects running resources automatically
+  + Zero configuration needed for framework selection
+  + Console prints detected framework on startup
+  + NEW: cactus_ultimate Job Creator integration
+  + Dynamic config merge — receives stations, recipes & categories from Job Creator
+  + ReloadCraftData export — live update craft data without restart
+  + ReloadGlobalSettings export — hot-reload global settings instantly
+  + GetCurrentGlobalConfig export — live config access for external resources
+  + GetItemImageMap export — provides correct item image filenames from framework
+  + NEW: Item image resolution system (imageMap)
+  + Images resolved from framework item registry (RSGCore.Shared.Items)
+  + Correct filenames for all items (e.g. consumable_water_filtered.png)
+  + Works for inventory display AND recipe ingredients/results
+  + NEW: Dynamic config events (client-side)
+  + mergeDynamicConfigs — merges Job Creator craft data on player join
+  + reloadDynamicConfigs — full reload when Job Creator saves changes
+  + applyGlobalSettings — applies global overrides (keys, XP, icons, images, notifications)
+  * FIX: InventoryImgPath now properly sent to client and NUI
+  * FIX: Default inventory path corrected to rsg-inventory/html/images (hyphen, not underscore)
+  * FIX: NotificationSystem remains manually configurable (not forced by auto-detection)
   ! Complete file replacement required
-  ! Replace: server.lua, client.lua, config.lua, config_webhook.lua, fxmanifest.lua, export.md
+  ! Replace: server/framework.lua, server/server.lua, client/client.lua, config.lua, fxmanifest.lua, html/script.js
+
